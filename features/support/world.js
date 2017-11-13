@@ -16,7 +16,7 @@ var World = function World(callback) {
   this.browser = remote;
 
   // run the callback when we are done do cucumber knows we are ready
-  this.browser.init({browserName: 'firefox'}, function() {
+  this.browser.init({browserName: 'phantomjs'}, function() {
     callback();
   });
 };
